@@ -1,0 +1,148 @@
+.hero-section {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  width: 20000px;
+  height: 85vh;
+  margin-top: 40px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1380px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 101%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+}
+
+.hero-text {
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.explore-btn {
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats-container {
+  background-color: white;
+  color: #333;
+  display: flex;
+  margin-top: auto;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 30px;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 50%;
+  min-width: 600px;
+  margin-right: 40px;
+}
+
+.stats-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.stats-icon {
+  color: rgb(0, 122, 92);
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-number {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #333;
+}
+
+.stats-label {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stats-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 42px;
+  }
+  
+  .stats-container {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+    gap: 20px;
+    min-width: unset;
+  }
+  
+  .hero-content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .stats-container {
+    border-radius: 0;
+  }
+}
